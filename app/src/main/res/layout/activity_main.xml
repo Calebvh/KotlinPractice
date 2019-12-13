@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <com.example.tictactoe.BackgroundView
+        android:id="@+id/BackgroundLines"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/textView"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </com.example.tictactoe.BackgroundView>
+
+    <com.example.tictactoe.TableCell
+        android:id="@+id/TopLeft_TableCell"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="15dp"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintLeft_toLeftOf="@id/BackgroundLines"
+        app:layout_constraintRight_toLeftOf="@id/TopMiddle_TableCell"
+        app:layout_constraintTop_toTopOf="@id/BackgroundLines" >
+    </com.example.tictactoe.TableCell>
+
+    <com.example.tictactoe.TableCell
+        android:id="@+id/TopMiddle_TableCell"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="15dp"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintLeft_toRightOf="@id/TopLeft_TableCell"
+        app:layout_constraintRight_toLeftOf="@id/TopRight_TableCell"
+        app:layout_constraintTop_toTopOf="@id/BackgroundLines" >
+    </com.example.tictactoe.TableCell>
+
+    <com.example.tictactoe.TableCell
+        android:id="@+id/TopRight_TableCell"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="15dp"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintBottom_toTopOf="@+id/MiddleRight_TableCell"
+        app:layout_constraintLeft_toRightOf="@+id/TopMiddle_TableCell"
+        app:layout_constraintRight_toRightOf="@id/BackgroundLines"
+        app:layout_constraintTop_toTopOf="@id/BackgroundLines" >
+    </com.example.tictactoe.TableCell>
+
+
+    <com.example.tictactoe.TableCell
+        android:id="@+id/MiddleLeft_TableCell"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="15dp"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintLeft_toLeftOf="@id/BackgroundLines"
+        app:layout_constraintRight_toLeftOf="@id/MiddleMiddle_TableCell"
+        app:layout_constraintTop_toBottomOf="@id/TopRight_TableCell"
+        app:layout_constraintBottom_toTopOf="@id/BottomRight_TableCell">
+
+    </com.example.tictactoe.TableCell>
+
+    <com.example.tictactoe.TableCell
+        android:id="@+id/MiddleMiddle_TableCell"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="15dp"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintLeft_toRightOf="@id/MiddleLeft_TableCell"
+        app:layout_constraintRight_toLeftOf="@id/MiddleRight_TableCell"
+        app:layout_constraintTop_toBottomOf="@id/TopRight_TableCell"
+        app:layout_constraintBottom_toTopOf="@id/BottomRight_TableCell" >
+    </com.example.tictactoe.TableCell>
+
+    <com.example.tictactoe.TableCell
+        android:id="@+id/MiddleRight_TableCell"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="15dp"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintLeft_toRightOf="@+id/MiddleMiddle_TableCell"
+        app:layout_constraintRight_toRightOf="@id/BackgroundLines"
+        app:layout_constraintTop_toBottomOf="@id/TopRight_TableCell"
+        app:layout_constraintBottom_toTopOf="@id/BottomRight_TableCell" >
+    </com.example.tictactoe.TableCell>
+
+
+    <com.example.tictactoe.TableCell
+        android:id="@+id/BottomLeft_TableCell"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="15dp"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintLeft_toLeftOf="@id/BackgroundLines"
+        app:layout_constraintRight_toLeftOf="@id/BottomMiddle_TableCell"
+        app:layout_constraintTop_toBottomOf="@id/MiddleLeft_TableCell"
+        app:layout_constraintBottom_toBottomOf="@id/BackgroundLines">
+    </com.example.tictactoe.TableCell>
+
+    <com.example.tictactoe.TableCell
+        android:id="@+id/BottomMiddle_TableCell"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="15dp"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintLeft_toRightOf="@id/BottomLeft_TableCell"
+        app:layout_constraintRight_toLeftOf="@id/BottomRight_TableCell"
+        app:layout_constraintTop_toBottomOf="@id/MiddleMiddle_TableCell"
+        app:layout_constraintBottom_toBottomOf="@id/BackgroundLines">
+    </com.example.tictactoe.TableCell>
+
+    <com.example.tictactoe.TableCell
+        android:id="@+id/BottomRight_TableCell"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="15dp"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintLeft_toRightOf="@+id/BottomMiddle_TableCell"
+        app:layout_constraintRight_toRightOf="@id/BackgroundLines"
+        app:layout_constraintTop_toBottomOf="@id/MiddleRight_TableCell"
+        app:layout_constraintBottom_toBottomOf="@id/BackgroundLines" >
+    </com.example.tictactoe.TableCell>
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/BackgroundLines"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
