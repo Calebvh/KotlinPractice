@@ -45,7 +45,4 @@ class BackgroundView(context: Context, attrs:AttributeSet) : View(context, attrs
         canvas.drawLine(this.width.toFloat() * 0.66F, margin.toFloat(), this.width.toFloat() * 0.66F, this.height.toFloat() - margin.toFloat(), linePaint)
 
     }
-
-
-
 }

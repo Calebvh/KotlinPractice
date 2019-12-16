@@ -24,10 +24,12 @@
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_margin="15dp"
+
         app:layout_constraintDimensionRatio="1:1"
         app:layout_constraintLeft_toLeftOf="@id/BackgroundLines"
         app:layout_constraintRight_toLeftOf="@id/TopMiddle_TableCell"
-        app:layout_constraintTop_toTopOf="@id/BackgroundLines" >
+        app:layout_constraintTop_toTopOf="@id/BackgroundLines"
+        app:layout_constraintBottom_toTopOf="@id/MiddleLeft_TableCell">
     </com.example.tictactoe.TableCell>
 
     <com.example.tictactoe.TableCell
@@ -35,10 +37,12 @@
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_margin="15dp"
+
         app:layout_constraintDimensionRatio="1:1"
         app:layout_constraintLeft_toRightOf="@id/TopLeft_TableCell"
         app:layout_constraintRight_toLeftOf="@id/TopRight_TableCell"
-        app:layout_constraintTop_toTopOf="@id/BackgroundLines" >
+        app:layout_constraintTop_toTopOf="@id/BackgroundLines"
+        app:layout_constraintBottom_toTopOf="@id/MiddleMiddle_TableCell">
     </com.example.tictactoe.TableCell>
 
     <com.example.tictactoe.TableCell
@@ -46,6 +50,7 @@
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_margin="15dp"
+
         app:layout_constraintDimensionRatio="1:1"
         app:layout_constraintBottom_toTopOf="@+id/MiddleRight_TableCell"
         app:layout_constraintLeft_toRightOf="@+id/TopMiddle_TableCell"
@@ -59,11 +64,12 @@
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_margin="15dp"
+
         app:layout_constraintDimensionRatio="1:1"
         app:layout_constraintLeft_toLeftOf="@id/BackgroundLines"
         app:layout_constraintRight_toLeftOf="@id/MiddleMiddle_TableCell"
-        app:layout_constraintTop_toBottomOf="@id/TopRight_TableCell"
-        app:layout_constraintBottom_toTopOf="@id/BottomRight_TableCell">
+        app:layout_constraintTop_toBottomOf="@id/TopLeft_TableCell"
+        app:layout_constraintBottom_toTopOf="@id/BottomLeft_TableCell">
 
     </com.example.tictactoe.TableCell>
 
@@ -72,11 +78,12 @@
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_margin="15dp"
+
         app:layout_constraintDimensionRatio="1:1"
         app:layout_constraintLeft_toRightOf="@id/MiddleLeft_TableCell"
         app:layout_constraintRight_toLeftOf="@id/MiddleRight_TableCell"
-        app:layout_constraintTop_toBottomOf="@id/TopRight_TableCell"
-        app:layout_constraintBottom_toTopOf="@id/BottomRight_TableCell" >
+        app:layout_constraintTop_toBottomOf="@id/TopMiddle_TableCell"
+        app:layout_constraintBottom_toTopOf="@id/BottomMiddle_TableCell" >
     </com.example.tictactoe.TableCell>
 
     <com.example.tictactoe.TableCell
@@ -84,6 +91,7 @@
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_margin="15dp"
+
         app:layout_constraintDimensionRatio="1:1"
         app:layout_constraintLeft_toRightOf="@+id/MiddleMiddle_TableCell"
         app:layout_constraintRight_toRightOf="@id/BackgroundLines"
@@ -97,6 +105,7 @@
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_margin="15dp"
+
         app:layout_constraintDimensionRatio="1:1"
         app:layout_constraintLeft_toLeftOf="@id/BackgroundLines"
         app:layout_constraintRight_toLeftOf="@id/BottomMiddle_TableCell"
@@ -109,6 +118,7 @@
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_margin="15dp"
+
         app:layout_constraintDimensionRatio="1:1"
         app:layout_constraintLeft_toRightOf="@id/BottomLeft_TableCell"
         app:layout_constraintRight_toLeftOf="@id/BottomRight_TableCell"
@@ -133,11 +143,22 @@
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="TextView"
+        android:text=""
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/BackgroundLines"
+        />
+
+    <Button
+        android:id="@+id/resetButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reset"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
         />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
